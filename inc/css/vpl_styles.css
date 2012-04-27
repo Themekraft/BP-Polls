@@ -1,0 +1,466 @@
+/* Styles */
+
+
+.req {
+	color:red;
+}
+
+.help_text{
+	width: 75%;
+text-align: justify;
+}
+
+.new-poll-form p.center{
+	text-align:center;
+}
+
+.new-poll-form input[type=text].time_field{
+	width:40px;
+}
+.new-poll-form input[type=text].date_field{
+	width:150px;
+}
+
+.new-poll-form input[type=text][name=new_category]{
+	width:150px;
+	display:none;
+}
+
+.new-poll-form .cancel_category{
+	display:none;
+}
+
+input[type="button"].remove-answer,
+input[type="button"].add_category,
+input[type="button"].add_tag {
+	vertical-align: middle;
+}
+
+input[type="button"].remove-answer:hover,
+input[type="button"].add_category:hover,
+input[type="button"].add_tag:hover {
+	vertical-align: middle;
+}
+
+.new-poll-form .poll-question-item input.number{
+	width:50px
+}
+
+
+.remove_question {
+	float:right
+}
+
+.question-answers-wrap {
+	padding-left:30px;
+}
+
+.question-answers-wrap.dating {
+	padding-left:0px;
+}
+
+.question-answers .question-answer-item{
+	margin-bottom:10px;
+}
+.standard-form .question-answers input[type=text] {
+	width:250px;
+	margin-right:25px;
+}
+
+.answers-title .date{
+	display:none;
+}
+
+.add_answer.date {
+	display:none;
+	margin-top:10px;
+}
+
+.answer-date {
+	overflow: hidden;
+	width:100%;
+}
+.answer-date > div{
+	float:left;
+}
+
+.new-poll-form .answer-date input[type=text].date_field{
+	width:150px;
+}
+
+.remove-answer.dates{
+	
+}
+.remove-answer{
+	clear:both;
+}
+
+.error-field {
+	background: #FFCECE;
+}
+
+
+/* tags */
+.new-poll-form .tags .delete_tag{
+	background:url(images/close.png) no-repeat right 2px ;
+	padding: 0 5px 6px;
+	cursor:pointer;
+}
+
+.new-poll-form .tags {
+	width:300px;
+	margin: 10px 0;
+	overflow: hidden;
+}
+.new-poll-form .tags .tag{
+	padding: 0 3px;
+	float: left;
+	display: block;
+	margin-right: 5px;
+	border: 1px solid #DDD;
+	margin-bottom: 5px;
+	background: #eee;
+}
+
+.new-poll-form input[type=text].tag_field,
+.new-poll-form input[type=text].category_field{
+	width:150px;
+}
+
+.new-poll-form .categories .cat label{
+	margin: 0;
+	font-weight: normal;
+	cursor: pointer;
+}
+.new-poll-form .categories .cat .name{
+	margin-left: 5px;
+}
+
+/* Polls list */
+
+.vpl-polls-list #poll_list{
+	margin-left:0px;
+}
+
+.vpl-polls-list #poll_list .question-list{
+	list-style: none;
+}
+
+.vpl-polls-list #poll_list .question-list li{
+	list-style: none;
+}
+
+.vpl-polls-list #poll_list .poll-list-item{
+	border-bottom: 1px solid #eee;
+	padding:5px;
+	margin-bottom: 5px;
+	list-style: none;
+}
+.vpl-polls-list .poll-list-item.draft{
+	background: #FFB;
+}
+.vpl-polls-list .poll-list-item.closed{
+	background: #EEE;
+}
+.vpl-polls-list .poll-list-item.open.hidden_poll{
+	background: #DFF;
+}
+
+.vpl-polls-list #poll_list .poll-meta {
+	padding-left:20px;
+}
+.vpl-polls-list #poll_list .poll-meta span {
+	font-weight: bold;
+}
+.vpl-poll-actions{
+	float:right
+}
+
+
+/* single Poll view*/
+
+.vpl-view-poll .vote_button {
+	margin-top: 20px;
+}
+
+.vpl-view-poll .vpl-poll-question p.maximum-options{
+	margin: 5px 0 0 0;
+	font-style:italic;
+	font-size:90%;
+}
+
+.vpl-view-poll .vpl-poll-question p.already-vote{
+	margin: 5px 0 0 0;
+	font-style:italic;
+	font-size:90%;
+}
+
+.vpl-poll-statistic .progress-bar {
+	background: #1FB3DD;
+	border:1px solid #ccc;
+	height: 20px;
+}
+
+.vpl-poll-statistic .item {
+	width:300px;
+	margin-bottom:5px;
+}
+
+.vpl-dating-poll-statistic .dating-poll-dates .spacer{	
+	width: 118px;
+	float: left;
+	background: #Fff;
+	height: 25px;
+	border-right: 2px solid white;
+}
+
+
+
+.vpl-dating-poll-statistic .dating-poll-dates .date{
+	float:left;
+	width:104px;
+	padding:5px;
+	text-align: center;
+	background: #007FFF;
+	color: white;
+	font-weight: bold;
+	border-right: 2px solid white;
+}
+
+
+.vpl-dating-poll-statistic .dating-poll-dates .date .start{
+	float:left;
+	width:80px;
+	text-align: center;
+}
+.vpl-dating-poll-statistic .dating-poll-dates .date .end{
+	float:left;
+	width:80px;
+	text-align: center;
+}
+
+.vpl-dating-poll-statistic .dating-poll-dates .date .days{
+	color:#fff;
+}
+
+.vpl-dating-poll-statistic .dating-poll-dates .date .time{
+	color:yellow;
+}
+
+.vpl-dating-poll-statistic .dating-poll-dates .date .defice{
+	float:left;
+	width:4px;
+	text-align: center;
+	line-height: 35px;
+	vertical-align: baseline;
+}
+
+
+
+.vpl-dating-poll-statistic .dating-poll-users {
+	clear:both;
+}
+
+.vpl-dating-poll-statistic .dating-poll-users .user{
+	overflow: hidden;
+}
+
+.vpl-dating-poll-statistic .dating-poll-users .user .user_login{
+	width: 112px;
+	margin-bottom: 0px;
+	padding: 0px 0px 0px 6px;
+	background: #EEE;
+}
+
+.vpl-dating-poll-statistic .dating-poll-users .user div{
+	float:left;
+	width:104px;
+	padding:0 5px;
+	height: 35px;
+	margin: 1px 0;
+	vertical-align: baseline;
+	line-height: 35px;
+	border-right: 2px solid #fff
+	
+}
+
+.vpl-dating-poll-statistic .dating-poll-users .user .checkbox{
+	text-align: center;
+	background:#efefef;
+}
+
+.vpl-dating-poll-statistic .dating-poll-users .user .checkbox.loaded{
+	background: #efefef url('images/ajax-loader.gif') no-repeat center center;
+}
+
+.vpl-dating-poll-statistic .dating-poll-users .user .checkbox input{
+	margin-top: 10px;
+}
+
+
+.vpl-dating-poll-statistic .dating-poll-users .user .yes{
+	background: #BFB url('images/checked.png') no-repeat center center;
+}
+
+.vpl-dating-poll-statistic .dating-poll-users .user .no{
+	background: #FBB;
+}
+
+.dating_vote_button {
+	margin:7px;
+}
+
+.vpl-dating-poll-statistic .dating-poll-users .votes{
+	overflow: hidden;
+	padding-left:120px;
+}
+
+.vpl-dating-poll-statistic .dating-poll-users .votes .vote_count{
+	text-align: center;
+	float: left;
+	width: 115px;
+	height: 35px;
+	margin: 1px 0;
+	vertical-align: baseline;
+	line-height: 35px;
+	border-right: 2px solid white;
+}
+
+
+
+/* Invites */
+.invite_users_wrap {
+position: relative;
+}
+
+.invite_users_list {
+	position:relative;
+	border:1px solid #ccc;
+	background: #fff;
+	padding:10px;
+}
+.invite_users_list .friend{
+	width: 75px;
+	float: left;
+	border: 1px solid #CCC;
+	padding: 5px;
+	margin: 0 15px 15px 0;
+	text-align: center;
+	cursor: pointer;
+}
+
+.invite_users_list .friend.selected{
+	border: 1px solid #21B8EF;
+	padding: 5px;
+}
+
+.invite_users_list .friend img{
+	border:1px solid #ccc;
+	margin-bottom: 5px
+}
+
+.invite_users_list .friend .friend_name{
+	font-weight:bold;
+	margin-bottom: 0;
+}
+
+.invites_form{
+	clear: both;
+	text-align:center;
+}
+
+.fast_invite {
+	float: right;
+	width: 125px;
+	margin-bottom: 50px;
+	text-align: right;
+}
+
+.fast_invite input{
+	width:120px;
+	margin-bottom: 10px;
+}
+.friends{
+	
+}
+/* Messages */
+.vpl-message {
+	padding: 10px;
+	font-weight: bold;
+	margin: 5px 0 10px 0;
+}
+.vpl-message.error{
+	background: #FBB;
+}
+.vpl-message.success{
+	background: #AFA;
+}
+
+.vpl-message.warning{
+	background: #FFA;
+}
+.hidden{
+	display:none
+}
+
+
+/* User navigation  */
+
+/* hide  buttons from Account menu*/
+#user_poll_view-personal-li,
+#user_poll_edit-personal-li {
+	display:none;
+}
+
+/* hide  buttons from Admin menu*/
+#wp-admin-bar #bp-admin-user_poll_view,
+#wp-admin-bar #bp-admin-user_poll_edit {
+	display:none;
+}
+
+
+/*  TAXONOMY */
+
+.vpl-categories-list {
+	width:450px;
+	padding:10px 0;
+}
+
+.vpl-categories-list li{
+	
+}
+
+.vpl-categories-list li .options{
+	float:right;
+	width:90px;
+}
+
+.vpl-tags-list  {
+	width: 450px;
+}
+
+.vpl-tags-list a {
+	padding-right:5px;
+	white-space: nowrap;
+}
+
+/* Pgination*/
+
+.vpl-pagination {
+	
+}
+
+.vpl-pagination a{
+	margin-right:10px;
+	font-size:12px;
+}
+
+.vpl-pagination a.active{
+	font-weight: bold;
+	font-size: 120%;
+}
+
+
+div.page ul.vpl-poll-answers, div.post ul.vpl-poll-answers {
+	list-style: none;
+}

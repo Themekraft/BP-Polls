@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/bp-polls/buddypress-polls.svn/!svn/ver/3/components
+END
+display_polls.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/bp-polls/buddypress-polls.svn/!svn/ver/3/components/display_polls.php
+END
+register_group_polls.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/bp-polls/buddypress-polls.svn/!svn/ver/3/components/register_group_polls.php
+END
+install.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/bp-polls/buddypress-polls.svn/!svn/ver/3/components/install.php
+END
+register_user_polls.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/bp-polls/buddypress-polls.svn/!svn/ver/3/components/register_user_polls.php
+END
+processing_POST.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/bp-polls/buddypress-polls.svn/!svn/ver/3/components/processing_POST.php
+END
+ajax.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/bp-polls/buddypress-polls.svn/!svn/ver/3/components/ajax.php
+END
+styles_and_scripts.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/bp-polls/buddypress-polls.svn/!svn/ver/3/components/styles_and_scripts.php
+END
+defines_functions.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/bp-polls/buddypress-polls.svn/!svn/ver/3/components/defines_functions.php
+END
