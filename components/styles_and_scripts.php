@@ -24,7 +24,7 @@ function vpl_print_styles_and_scripts() {
 		/* Scripts */
 		
 		$lang = WPLANG != '' ? WPLANG : 'en_GB';
-		$script = $js_path . ' /datepicker/i18n/' . $lang . '.js';
+		$script = $js_path . 'datepicker/i18n/' . $lang . '.js';
 		wp_enqueue_script('date_picker_i', $script, array('jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'jquery-ui-slider'));
 		
 		wp_enqueue_script( 'jquery-ui-widget');

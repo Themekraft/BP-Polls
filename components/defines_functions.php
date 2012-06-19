@@ -53,7 +53,17 @@ function vpl_get_current_action() {
 		}
 	}
 	
-	if( ! $action ) $action = 'list';
+	if( ! $action ):
+		$action_variables = $bp->action_variables;
+		$view = new Poll_Extension_View( VPL_CURRENT_MODULE, VPL_CURRENT_ACTION , $action_variables);
+
+		if( $view->has_polls() ):
+			$action = 'list';
+		else:
+			$action = 'new';
+		endif;
+	endif;
+	 
 	
 	return $action;
 }

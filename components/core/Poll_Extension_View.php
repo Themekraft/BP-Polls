@@ -479,6 +479,36 @@ class Poll_Extension_View {
 		
 	}
 	
+	public function has_polls(){
+		global $bp, $wpdb, $vpl_polls_list;
+		
+		// SQL "WHERE" string
+		$sql_where = '';
+		
+		//If module GROUP search for group_id
+		if( $this->module == VPL_GROUP_MODULE ){
+			$sql_where = "WHERE group_id = ".$this->group_id;
+		//Else if we in USER module serach for user_id
+		} elseif( $this->module == VPL_USER_MODULE ) {
+			$sql_where = "WHERE user_id = ".$this->user_id ." OR author_id = ".$this->user_id ;
+			
+		}
+		
+		$sql = "
+			SELECT *
+			FROM ". VPL_TABLE_POLLS ."
+			".$sql_where." 
+			ORDER BY created DESC
+		";
+		
+		$vpl_polls_list = $wpdb->get_results($sql);
+		
+		if( count( $vpl_polls_list ) )
+			return TRUE;
+		else 
+			return FALSE;
+	}
+	
 	/**
 	 * Display list of viewed user polls
 	 */
@@ -666,10 +696,10 @@ class Poll_Extension_View {
 						?>
 						<div class="fast_invite">
 							<?php if($this->module == VPL_GROUP_MODULE):?>
-							<input type="button" class="select_group" value="Invite group users"/><br/>
-							<input type="button" class="select_friends" value="Invite all friends"/><br/>
+							<input type="button" class="select_group" value="<?php _e('Invite group users', 'bp_polls'); ?>"/><br/>
+							<input type="button" class="select_friends" value="<?php _e('Invite all friends', 'bp_polls'); ?>"/><br/>
 							<?php endif;?>
-							<input type="button" class="select_all" value="Invite all users"/>
+							<input type="button" class="select_all" value="<?php _e('Invite all users', 'bp_polls'); ?>"/>
 						</div>
 						<div class="friends">
 						<?php
@@ -1044,9 +1074,21 @@ class Poll_Extension_View {
 	 * Load template. Using template path of plugin. 
 	 * @param string $template_name File name of template ( with subdirectory )
 	 */
-	protected function load_template( $template_name ) {
-		// All templates are in "/templates/" directory
-		include( VPL_ROOT_PATH . '/templates/' . $template_name );
+	protected function load_template( $template_name, $load = TRUE, $require_once = TRUE ) {
+	    $located = '';
+	    $located = locate_template( 'polls/' . $template_name, $load, $require_once );
+
+	    if ( $located == '' ) {
+		    if ( !$template_name )
+				continue;
+			
+		    if ( file_exists( VPL_ROOT_PATH . 'templates/polls/' . $template_name ) ) {
+				$located = VPL_ROOT_PATH . 'templates/polls/' . $template_name;
+		    }
+	    }
+
+	    if ( $load && '' != $located )
+		   include_once( $located );
 	}
 			
 	
@@ -1055,7 +1097,9 @@ class Poll_Extension_View {
 	 */
 	protected function display_subnavigation() {
 		if( $this->module == 'group' ) {
-			?>
+			global $vpl_polls_list; ?>
+
+			<?php if( !empty( $vpl_polls_list ) ): ?>
 			<div class="item-list-tabs no-ajax" id="subnav" role="navigation">
 				<ul>
 					<li <?php if('list' == $this->action ) echo 'class="current"'; ?> ><a href="<?php echo VPL_CURRENT_COMPONENT_URL ?>"><?php _e('Polls List', 'bp_polls')?></a></li>
@@ -1066,6 +1110,18 @@ class Poll_Extension_View {
 					
 				</ul>
 			</div>
+			<?php else: ?>
+			<div class="item-list-tabs no-ajax" id="subnav" role="navigation">
+				<ul>
+					<?php if( vpl_is_user_can_modify_polls() || vpl_is_user_can_create_polls() ):?>
+						<li <?php if('new' == $this->action ) echo 'class="current"'; ?> ><a href="<?php echo VPL_CURRENT_COMPONENT_URL . 'new/' ?>"><?php _e('New Poll', 'bp_polls')?></a></li>
+					<?php endif;?>
+					<li <?php if('list' == $this->action ) echo 'class="current"'; ?> ><a href="<?php echo VPL_CURRENT_COMPONENT_URL ?>list/"><?php _e('Polls List', 'bp_polls')?></a></li>
+					<li <?php if('taxonomy' == $this->action ) echo 'class="current"'; ?> ><a href="<?php echo VPL_CURRENT_COMPONENT_URL . 'taxonomy/' ?>"><?php _e('Taxonomy', 'bp_polls')?></a></li>
+					
+				</ul>
+			</div>	
+			<?php endif; ?>
 			<?php
 		}
 	}

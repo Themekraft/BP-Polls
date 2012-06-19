@@ -1,14 +1,27 @@
 <?php
+global $bp;
+$action_variables = $bp->action_variables;
+$view = new Poll_Extension_View( VPL_CURRENT_MODULE, VPL_CURRENT_ACTION , $action_variables);
+
+if( $view->has_polls() ):
+	$default_subnav_slug = 'list';
+	$polls_list_pos = 10;
+	$new_poll_pos = 20;
+else:
+	$default_subnav_slug = 'new';
+	$polls_list_pos = 20;
+	$new_poll_pos = 10;
+endif;
 
 //Add Top level menu in user profile
 bp_core_new_nav_item(
 	array(
 		'name' => __( VPL_COMPONENT_NAME , 'buddypress'),
 		'slug' => VPL_COMPONENT_SLUG,
-		'position' => 100,
+		'position' => 90,
 		'show_for_displayed_user' => true,
 		'screen_function' => 'vpl_show_user_polls',
-		'default_subnav_slug' => 'list'
+		'default_subnav_slug' => $default_subnav_slug
 	));
 
 
@@ -36,7 +49,7 @@ $polls_list = array(
 	'parent_url'      => $parent_url,
 	'parent_slug'     => VPL_COMPONENT_SLUG,
 	'screen_function' => 'vpl_show_user_polls',
-	'position'        => 10,
+	'position'        => $polls_list_pos,
 	'user_has_access' => 'all'
 );
 bp_core_new_subnav_item($polls_list);
@@ -49,7 +62,7 @@ $polls_new = array(
 	'parent_url'      => $parent_url,
 	'parent_slug'     => VPL_COMPONENT_SLUG,
 	'screen_function' => 'vpl_show_user_polls',
-	'position'        => 20,
+	'position'        => $new_poll_pos,
 	'user_has_access' => ( bp_is_my_profile() || current_user_can('administrator') )
 );
 bp_core_new_subnav_item($polls_new);

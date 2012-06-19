@@ -46,7 +46,6 @@ function vpl_init() {
 	include_once('components/defines_functions.php');
 	define( VPL_CURRENT_MODULE, vpl_get_current_module() ); // user or group
 	define( VPL_CURRENT_COMPONENT, vpl_get_current_component() );  // expect for 'polls'
-	define( VPL_CURRENT_ACTION, vpl_get_current_action() ); // [ list, view, edit, new ]
 	
 	// Url to poll component ( in groups - groups/single/polls; in porfile members/username/polls/ )
 	define( VPL_CURRENT_COMPONENT_URL, vpl_get_current_component_url() ); 
@@ -74,6 +73,8 @@ function vpl_init() {
 	
 	// Add polls to user menu ( control panel also )
 	include_once('components/register_user_polls.php');
+	
+	define( VPL_CURRENT_ACTION, vpl_get_current_action() ); // [ list, view, edit, new ]
 	
 	if( VPL_CURRENT_MODULE ) {
 		
@@ -106,7 +107,7 @@ function vpl_init() {
 			add_filter('wp_title', 'vpl_add_title');
 			global $view;
 			$view = new Poll_Extension_View( VPL_CURRENT_MODULE, VPL_CURRENT_ACTION , array() );
-			bp_core_load_template('all_polls');
+			bp_core_load_template('polls/all_polls');
 		}
 	}
 	
@@ -232,7 +233,7 @@ function vpl_poll_print_js_translation() {
 	
 	var VPL_TRANS = [];
 	
-	VPL_TRANS['Please enter the name'] = '<?php _e('Please enter the name','bp_polls')?>';
+	VPL_TRANS['Please enter the Poll name'] = '<?php _e('Please enter the Poll name','bp_polls')?>';
 	VPL_TRANS['Start date can not be empty'] = '<?php _e('Start date can not be empty','bp_polls')?>';
 	VPL_TRANS['End date can not be empty'] = '<?php _e('End date can not be empty','bp_polls')?>';
 	VPL_TRANS['Start date must be less than the end date'] = '<?php _e('Start date must be less than the end date','bp_polls')?>';
@@ -243,8 +244,10 @@ function vpl_poll_print_js_translation() {
 	VPL_TRANS['must have at least 2 answers'] = '<?php _e('must have at least 2 answers','bp_polls')?>';
 	VPL_TRANS['Missed start for date #'] = '<?php _e('Missed start for date #','bp_polls')?>';
 	VPL_TRANS['Missed end for date #'] = '<?php _e('Missed end for date #','bp_polls')?>';
-	VPL_TRANS['Start must be less than end for date #'] = '<?php _e('Start must be less than end for date #','bp_polls')?>';
-	VPL_TRANS['Missed date #'] = '<?php _e('Missed date #','bp_polls')?>';
+	VPL_TRANS['The startdate for answer'] = '<?php _e('The startdate for answer','bp_polls')?>';
+	VPL_TRANS['have to be before the enddate'] = '<?php _e('have to be before the enddate','bp_polls')?>';
+	VPL_TRANS['A start and an end date for answer'] = '<?php _e('A start and an end date for answer','bp_polls')?>';
+	VPL_TRANS['have to be filled in'] = '<?php _e('have to be filled in','bp_polls')?>';
 	VPL_TRANS['Missed answer text for Question #'] = '<?php _e('Missed answer text for Question #','bp_polls')?>';
 	VPL_TRANS['Answer #'] = '<?php _e('Answer #','bp_polls')?>';
 	VPL_TRANS['Are you sure want delete this answer?'] = '<?php _e('Are you sure want delete this answer?','bp_polls')?>';
@@ -259,6 +262,7 @@ function vpl_poll_print_js_translation() {
 	VPL_TRANS['Are you sure want to proceed? This action will clear all votes statistic.'] = '<?php _e('Are you sure want to proceed? This action will clear all votes statistic.','bp_polls')?>';
 	
 	//timepicker
+	VPL_TRANS['Choose Time'] = '<?php _e('Choose Time','bp_polls')?>';
 	VPL_TRANS['Now'] = '<?php _e('Now','bp_polls')?>';
 	VPL_TRANS['Done'] = '<?php _e('Done','bp_polls')?>';
 	VPL_TRANS['Time'] = '<?php _e('Time','bp_polls')?>';

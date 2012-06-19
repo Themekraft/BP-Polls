@@ -7,7 +7,7 @@ add_action('bp_template_content', 'vpl_load_polls_view');
  */
 function vpl_load_polls_view() {
 	global $bp;
-
+	
 	if( VPL_CURRENT_COMPONENT == VPL_COMPONENT_SLUG ) {
 		
 		if( VPL_CURRENT_MODULE == 'user') {

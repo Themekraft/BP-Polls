@@ -43,7 +43,7 @@ jQuery(document).ready(function() {
 			jQuery('input[name=poll_name]').addClass('error-field');
 			formIsValid = 0;
 			
-			error_message += __e('Please enter the name') + '<br/>';
+			error_message += __e('Please enter the Poll name') + '<br/>';
 		}
 		
 		if( jQuery('input[name=poll_start_date]').val() ) {
@@ -126,7 +126,7 @@ jQuery(document).ready(function() {
 							}
 								
 							if( start_timestamp > end_timestamp ){
-								error_message += __e('Start must be less than end for date #')+(j+1)+' <br/>';
+								error_message += __e('The startdate for answer') + ' ' +(j+1) + ' ' + __e('have to be before the enddate')  + ' <br/>';
 								formIsValid = 0;
 							}
 							
@@ -141,7 +141,7 @@ jQuery(document).ready(function() {
 						if( jQuery(this).find('.answer-text').val() == ''){
 							if('dating' == jQuery('input[name=poll_type]:checked').val()){
 								if( missed_date == false ){
-									error_message += __e('Missed date #') + (j+1) + ' <br/>';
+									error_message += __e('A start and an end date for answer') + ' ' + (j+1) + ' ' + __e('have to be filled in') + ' <br/>';
 									missed_date = true;
 								}
 							}else{

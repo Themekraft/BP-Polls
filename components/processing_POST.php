@@ -59,8 +59,7 @@ function vpl_create_poll() {
 	$cats = $_POST['cats'];
 	$tags = $_POST['tags'];
 	
-	//Insert a poll
-	$poll_inserting = $wpdb->insert( VPL_TABLE_POLLS, array(
+	$poll_array =  array(
 		'name' => $poll_name,
 		'user_id' => $user_id,
 		'group_id' => $group_id,
@@ -72,10 +71,14 @@ function vpl_create_poll() {
 		'active' => $poll_active,
 		'poll_type' => $poll_type,
 		'show_results' => $poll_show_results
-	));
+	);
+	
+	//Insert a poll
+	$poll_inserting = $wpdb->insert( VPL_TABLE_POLLS, $poll_array );
 	
 	//I poll added succesfully, insert questions
 	if( $poll_inserting ) {
+		
 		$poll_id = $wpdb->insert_id; //Inserting Poll ID
 		
 		vpl_update_categories($poll_id, $cats);
