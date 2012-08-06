@@ -204,7 +204,8 @@ function vpl_js_date_format( $php_date_str = '') {
 		'Y/m/d' => 'yy/mm/dd',
 		'm/d/Y' => 'mm/dd/yy',
 		'd/m/Y' => 'dd/mm/yy',
-		'd.m.Y' => 'dd.mm.yy'
+		'd.m.Y' => 'dd.mm.yy',
+		'j. F Y' => 'dd. MM yy'
 	);
 	
 	if( isset($dates[$php_date_str])) {
