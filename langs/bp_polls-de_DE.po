@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BP Polls v1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-09 15:42+0200\n"
-"PO-Revision-Date: 2012-05-10 20:19+0700\n"
+"POT-Creation-Date: 2012-07-05 11:51+0100\n"
+"PO-Revision-Date: 2012-07-16 08:45:26+0000\n"
 "Last-Translator: Sven Wagener <svenw@themekraft.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -129,10 +129,14 @@ msgid "Invites have been sent successfully"
 msgstr "Einladungen wurden erfolgreich gesendet."
 
 #: bp-polls.php:262
-#, fuzzy
 #@ bp_polls
 msgid "Are you sure want to proceed? This action will clear all votes statistic."
 msgstr "Alle Umfrageergebnisse werden gelöscht. Wollen Sie wirklich fortfahren?"
+
+#: bp-polls.php:265
+#@ bp_polls
+msgid "Choose Time"
+msgstr "Zeit w&auml;hlen"
 
 #: bp-polls.php:266
 #@ bp_polls
@@ -174,6 +178,16 @@ msgstr "Geschlossen"
 msgid "Draft"
 msgstr "Entwurf"
 
+#: bp-polls.php:308
+#@ bp_polls
+msgid "BP Polls Options"
+msgstr "BP Poll Optionen"
+
+#: bp-polls.php:310
+#@ bp_polls
+msgid "Enable inviting all users to poll."
+msgstr "Alle Benutzer zur Umfrage einladen erlauben."
+
 #: components/ajax.php:34
 #: templates/polls/view_poll.php:59
 #: templates/polls/view_poll_dating.php:91
@@ -212,16 +226,15 @@ msgstr "Die Umfrage wurde nicht aktualisiert. Die Umfragen ID fehlt."
 msgid "Poll was succesfully deleted"
 msgstr "Umfrage wurde erfolgreich gelöscht"
 
-#: components/processing_POST.php:364
+#: components/register_user_polls.php:40
 #@ bp_polls
-msgid "is aleady exist"
-msgstr "existiert bereits"
+msgid "My Polls"
+msgstr "Meine Umfragen"
 
-#: components/core/Poll_Extension_View.php:1105
-#: components/core/Poll_Extension_View.php:1119
+#: components/register_user_polls.php:42
 #@ bp_polls
-msgid "Polls List"
-msgstr "Umfragenliste"
+msgid "User Polls"
+msgstr "Benutzerumfragen"
 
 #: components/core/Poll_Extension_View.php:1107
 #: components/core/Poll_Extension_View.php:1117
@@ -264,6 +277,21 @@ msgstr "Es gibt keine Umfrage mit dieser ID"
 msgid "Missing poll ID"
 msgstr "Poll ID fehlt"
 
+#: components/core/Poll_Extension_View.php:699
+#@ bp_polls
+msgid "Invite group users"
+msgstr "Gruppe"
+
+#: components/core/Poll_Extension_View.php:700
+#@ bp_polls
+msgid "Invite all friends"
+msgstr "Kontakte"
+
+#: components/core/Poll_Extension_View.php:702
+#@ bp_polls
+msgid "Invite all users"
+msgstr "Alle"
+
 #: components/core/Poll_Extension_View.php:720
 #@ bp_polls
 msgid "Send Invites"
@@ -273,6 +301,11 @@ msgstr "Einladungen senden"
 #@ bp_polls
 msgid "Cancel"
 msgstr "Abbrechen"
+
+#: components/core/Poll_Extension_View.php:726
+#@ bp_polls
+msgid "No users to invite"
+msgstr "Kein Benutzer zum Einladen vorhanden."
 
 #: components/core/Poll_Extension_View.php:740
 #@ bp_polls
@@ -299,6 +332,12 @@ msgstr "Taxonomy ID fehlt"
 msgid "Missing category ID"
 msgstr "Kategorie ID fehlt"
 
+#: components/core/Poll_Extension_View.php:1105
+#: components/core/Poll_Extension_View.php:1119
+#@ bp_polls
+msgid "Polls List"
+msgstr "Umfragenliste"
+
 #: components/core/Poll_Extension_View.php:1245
 #@ bp_polls
 msgid "&laquo; Previous"
@@ -312,7 +351,7 @@ msgstr "Nächste &raquo;"
 #: components/core/Poll_Group_Extension.php:59
 #@ default
 msgid "Who can see group polls?"
-msgstr ""
+msgstr "Wer kann Umfragen aus Gruppen sehen?"
 
 #: components/core/Poll_Group_Extension.php:60
 #: templates/polls/edit_poll.php:114
@@ -338,12 +377,12 @@ msgstr "Speichern"
 #: components/core/Poll_Group_Extension.php:85
 #@ buddypress
 msgid "There was an error saving, please try again"
-msgstr ""
+msgstr "Es ist ein Fehler beim Speichern aufgetreten, bitte versuchen Sie es erneut"
 
 #: components/core/Poll_Group_Extension.php:87
 #@ buddypress
 msgid "Settings saved successfully "
-msgstr ""
+msgstr "Einstellungen erfolgreich gespeichert"
 
 #: templates/polls/403.php:1
 #@ bp_polls
@@ -355,6 +394,26 @@ msgstr "Sie haben nicht die Berechtigungen diese Seite zu öffnen"
 msgid "Requested page was not found"
 msgstr "Aufgerufene Seite wurde nicht gefunden"
 
+#: templates/polls/edit_poll.php:35
+#: templates/polls/new_poll.php:35
+#: templates/polls/polls_list.php:46
+#: templates/polls/taxonomy.php:10
+#@ bp_polls
+msgid "Categories"
+msgstr "Kategorien"
+
+#: templates/polls/edit_poll.php:36
+#: templates/polls/new_poll.php:36
+#@ bp_polls
+msgid "Add Category"
+msgstr "Kategorie hinzufügen"
+
+#: templates/polls/edit_poll.php:55
+#: templates/polls/new_poll.php:47
+#@ bp_polls
+msgid "Show All Categories"
+msgstr "Zeige alle Kategorien"
+
 #: templates/polls/edit_poll.php:70
 #: templates/polls/new_poll.php:62
 #: templates/polls/polls_list.php:59
@@ -363,10 +422,16 @@ msgstr "Aufgerufene Seite wurde nicht gefunden"
 msgid "Tags"
 msgstr "Schlagwörter"
 
-#: templates/polls/new_poll.php:70
+#: templates/polls/edit_poll.php:78
 #@ bp_polls
-msgid "Add tag"
+msgid "Add Tag"
 msgstr "Schlagwort hinzufügen"
+
+#: templates/polls/edit_poll.php:93
+#: templates/polls/new_poll.php:76
+#@ bp_polls
+msgid "This category should be so broad as to expect more polls to be part of that category. Ideally you chose just one category for every poll, but it is possible to chose multiple categories. Categories are descriptive elements. Tags are more associative elements. You can use them to further refine the description of your poll. Just write down 3-5 words that come to your mind when you think about this poll. Tags should not include categories."
+msgstr ""
 
 #: templates/polls/edit_poll.php:97
 #: templates/polls/new_poll.php:80
@@ -402,10 +467,9 @@ msgstr "Wer kann diese Umfrage sehen"
 #: templates/polls/edit_poll.php:117
 #: templates/polls/new_poll.php:98
 #: templates/polls/new_poll.php:100
-#, fuzzy
 #@ bp_polls
 msgid "Autorized users"
-msgstr "Eingeladene Benutzer"
+msgstr "Authorisierte Benutzer"
 
 #: templates/polls/edit_poll.php:121
 #: templates/polls/new_poll.php:105
@@ -594,6 +658,16 @@ msgstr "Umfrage speichern (Antworten werden gelöscht)"
 msgid "This button will save ALL poll data, questions, answers. And VOTES statistic will be CLEARED"
 msgstr "Dieser Button speichert alle Umfragedaten, Fragen. Umfragestatisitiken und Antworten werden gelöscht"
 
+#: templates/polls/edit_taxonomy.php:5
+#@ bp_polls
+msgid "Edit taxonomy"
+msgstr "Bearbeiten"
+
+#: templates/polls/edit_taxonomy.php:8
+#@ bp_polls
+msgid "Save taxonomy"
+msgstr "Speichern"
+
 #: templates/polls/new_poll.php:27
 #@ bp_polls
 msgid "Poll Type"
@@ -608,6 +682,11 @@ msgstr "Umfrage"
 #@ bp_polls
 msgid "Dating Poll"
 msgstr "Terminumfrage"
+
+#: templates/polls/new_poll.php:70
+#@ bp_polls
+msgid "Add tag"
+msgstr "Schlagwort hinzufügen"
 
 #: templates/polls/new_poll.php:187
 #@ bp_polls
@@ -660,19 +739,6 @@ msgstr "Fragen"
 msgid "There are no polls to show"
 msgstr "Keine Umfragen vorhanden"
 
-#: templates/polls/taxonomy.php:7
-#@ bp_polls
-msgid "New category"
-msgstr "Neue Kategorie"
-
-#: templates/polls/edit_poll.php:35
-#: templates/polls/new_poll.php:35
-#: templates/polls/polls_list.php:46
-#: templates/polls/taxonomy.php:10
-#@ bp_polls
-msgid "Categories"
-msgstr "Kategorien"
-
 #: templates/polls/view_poll.php:25
 #: templates/polls/view_poll_dating.php:24
 #@ bp_polls
@@ -700,112 +766,122 @@ msgstr "Optionen erlaubt"
 msgid "Vote"
 msgstr "Abstimmen"
 
-#: bp-polls.php:308
+#: templates/polls/taxonomy.php:72
 #@ bp_polls
-msgid "BP Polls Options"
-msgstr "BP Poll Optionen"
+msgid "Are you sure want delete this category?"
+msgstr "Wollen Sie diese Kategorie wirklich löschen?"
 
-#: bp-polls.php:310
+#: templates/polls/taxonomy.php:68
 #@ bp_polls
-msgid "Enable inviting all users to poll."
-msgstr "Alle Benutzer zur Umfrage einladen erlauben."
-
-#: components/core/Poll_Extension_View.php:726
-#@ bp_polls
-msgid "No users to invite"
-msgstr "Kein Benutzer zum Einladen vorhanden."
-
-#: components/processing_POST.php:403
-#@ bp_polls
-msgid "Taxonomy not saved"
-msgstr "Nicht gespeichert."
-
-#: components/register_user_polls.php:40
-#@ bp_polls
-msgid "My Polls"
-msgstr "Meine Umfragen"
-
-#: components/register_user_polls.php:42
-#@ bp_polls
-msgid "User Polls"
-msgstr "Benutzerumfragen"
-
-#: templates/polls/edit_poll.php:36
-#: templates/polls/new_poll.php:36
-#@ bp_polls
-msgid "Add Category"
-msgstr "Kategorie hinzufügen"
-
-#: templates/polls/edit_poll.php:55
-#: templates/polls/new_poll.php:47
-#@ bp_polls
-msgid "Show All Categories"
-msgstr "Zeige alle Kategorien"
-
-#: templates/polls/edit_poll.php:78
-#: templates/polls/taxonomy.php:35
-#@ bp_polls
-msgid "Add Tag"
-msgstr "Schlagwort hinzufügen"
-
-#: templates/polls/edit_poll.php:93
-#: templates/polls/new_poll.php:76
-#@ bp_polls
-msgid "This category should be so broad as to expect more polls to be part of that category. Ideally you chose just one category for every poll, but it is possible to chose multiple categories. Categories are descriptive elements. Tags are more associative elements. You can use them to further refine the description of your poll. Just write down 3-5 words that come to your mind when you think about this poll. Tags should not include categories."
+msgid ""
+"*WARNING*\n"
+"This category has polls. If you delete the category - all polls loosing category information.\n"
+"Are you sure want delete this category?"
 msgstr ""
+"Achtung!\n"
+"Diese Kategorie wird in Umfragen verwendet.\n"
+"Wenn Sie diese Kategorie löschen, wird sie aus allen Umfragen Entfernt.\n"
+"Wollen Sie die Kategorie wirklich löschen?"
 
-#: templates/polls/edit_taxonomy.php:5
+#: templates/polls/taxonomy.php:86
 #@ bp_polls
-msgid "Edit taxonomy"
-msgstr "Bearbeiten."
+msgid ""
+"*WARNING*\n"
+"This tag has polls. If you delete the category - all polls loosing tag information.\n"
+"Are you sure want delete this tag?"
+msgstr ""
+"Achtung!\n"
+"Dieses Schlagwort wird in Umfragen verwendet.\n"
+"Wenn Sie dieses Schlagwort löschen, wird es aus allen Umfragen Entfernt.\n"
+"Wollen Sie das Schlagwort wirklich löschen?"
 
-#: templates/polls/edit_taxonomy.php:8
+#: templates/polls/taxonomy.php:90
 #@ bp_polls
-msgid "Save taxonomy"
-msgstr "Speichern"
+msgid "Are you sure want delete this tag?"
+msgstr "Wollen Sie dieses Schlagwort wirklich löschen?"
 
-#: bp-polls.php:265
+#: templates/polls/polls_list.php:19
+#, php-format
 #@ bp_polls
-msgid "Choose Time"
-msgstr "Zeit w&auml;hlen"
-
-#: components/core/Poll_Extension_View.php:702
-#@ bp_polls
-msgid "Invite all users"
-msgstr "Alle"
-
-#: components/core/Poll_Extension_View.php:699
-#@ bp_polls
-msgid "Invite group users"
-msgstr "Gruppe"
-
-#: components/core/Poll_Extension_View.php:700
-#@ bp_polls
-msgid "Invite all friends"
-msgstr "Kontakte"
+msgid ""
+"*WARNING*\n"
+"Once deleted this poll cant be restored!\n"
+"Are you sure you want to delete th poll '%s'?\n"
+msgstr ""
+"*Warnung*\n"
+"Nachdem die Umfrage gelöscht wurde,\n"
+"kann sie nicht mehr wiederhergestellt werden.\n"
+"Wollen Sie die Umfrage '%s' wirklich löschen?"
 
 #: bp-polls.php:236
 #@ bp_polls
 msgid "Please enter the Poll name"
 msgstr "Bitte geben Sie einen Namen für die Umfrage ein"
 
-#: bp-polls.php:250
-#@ bp_polls
-msgid "have to be filled in"
-msgstr "muss angegeben werden"
-
 #: bp-polls.php:247
 #@ bp_polls
 msgid "The startdate for answer"
-msgstr "Das Startdatum für Antwort"
+msgstr "Das Startdatum für die Antwort"
 
 #: bp-polls.php:248
 #@ bp_polls
 msgid "have to be before the enddate"
-msgstr "muss vor dem Startdatum liegen"
+msgstr "muss vor dem Enddatum liegen"
 
 #: bp-polls.php:249
 #@ bp_polls
 msgid "A start and an end date for answer"
-msgstr "Das Start- und Enddatum für Antwort"
+msgstr "Ein Start- und ein Enddatum für die Antwort"
+
+#: bp-polls.php:250
+#@ bp_polls
+msgid "have to be filled in"
+msgstr "muss ausgefüllt werden"
+
+#: templates/polls/taxonomy.php:7
+#@ bp_polls
+msgid "New Category"
+msgstr "Kategorie hinzufügen"
+
+#: components/processing_POST.php:365
+#: components/processing_POST.php:414
+#@ bp_polls
+msgid "Category"
+msgstr "Kategorie"
+
+#: components/processing_POST.php:370
+#, php-format
+#@ bp_polls
+msgid "%s with name"
+msgstr "%s mit dem Namen"
+
+#: components/processing_POST.php:370
+#@ bp_polls
+msgid " aleady exists"
+msgstr "existiert bereits"
+
+#: components/processing_POST.php:362
+#: components/processing_POST.php:411
+#@ bp_polls
+msgid "Tag"
+msgstr "Schlagwort"
+
+#: templates/polls/taxonomy.php:35
+#@ bp_polls
+msgid "New Tag"
+msgstr "Schlagwort hinzufügen"
+
+#: components/processing_POST.php:384
+#: components/processing_POST.php:418
+#, php-format
+#@ bp_polls
+msgid "%s \"%s\" saved successfully"
+msgstr "%s \"%s\" wurde erfolgreich gespeichert"
+
+#: components/processing_POST.php:388
+#: components/processing_POST.php:420
+#, php-format
+#@ bp_polls
+msgid "\"%s\" not saved"
+msgstr "\"%s\" wurde nicht gespeichert"
 
