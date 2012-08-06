@@ -358,25 +358,34 @@ function vpl_add_taxonomy() {
 	$user_id = (int) $_POST['user_id'];
 	$type = $_POST['type'];
 	
+	if( $type == 'tag' )
+		$type_string = ucfirst( __( 'Tag', 'bp_polls' ) );
+		
+	if( $type == 'category' )
+		$type_string = ucfirst( __( 'Category', 'bp_polls' ) );
+	
 	$tax = $wpdb->get_row("SELECT * FROM ".VPL_TABLE_TAXONOMY." where s_name = '$s_name' AND group_id = $group_id AND tax_type = '$type' ");
 	
 	if ($tax) {
-		Poll_Extension_View::$errors_messages[] = __( ucfirst($type) . ' with name','bp_polls') . ' ' . $name . ' ' . __('is aleady exist','bp_polls');
+		Poll_Extension_View::$errors_messages[] = sprintf( __( '%s with name','bp_polls'), $type_string ) . ' "' . $name . '" ' . __(' aleady exists','bp_polls');
 	} else {
-		$tax_insert = $wpdb->insert( VPL_TABLE_TAXONOMY, array(
+		
+		$tax_array = array(
 			'name' => $name,
 			's_name' => $s_name,
 			'group_id' => $group_id,
 			'user_id' => $user_id,
 			'tax_type' => $type,
-		));
+		);
+		
+		$tax_insert = $wpdb->insert( VPL_TABLE_TAXONOMY, $tax_array );
 		
 		if( $tax_insert !== false) {
-			Poll_Extension_View::$succes_messages[] = __( ucfirst($type) . ' "'.$name.'" saved successfully','bp_polls');
+			Poll_Extension_View::$succes_messages[] = sprintf( __( '%s "%s" saved successfully','bp_polls'), $type_string, $name );
 			//wp_redirect( VPL_CURRENT_COMPONENT_URL . 'taxonomy/');
 			//die();
 		}else{
-			Poll_Extension_View::$errors_messages[] = __( ucfirst($type) . ' not saved','bp_polls');
+			Poll_Extension_View::$errors_messages[] = sprintf(  __( '"%s" not saved','bp_polls'), $type_string );
 		}
 	}
 	
@@ -391,16 +400,24 @@ function vpl_edit_taxonomy() {
 	
 	$name = esc_html( $_POST['taxonomy_name'] );
 	$cat_id = (int) $_POST['taxonomy_id'];
+	$type = $_POST['type'];
 	
 	$tax_updated = $wpdb->update( VPL_TABLE_TAXONOMY, 
 			array( 'name' => $name ),
 			array( 'id' => $cat_id )
 	);
+	
+	if( $type == 'tag' )
+		$type_string = ucfirst( __( 'Tag', 'bp_polls' ) );
+		
+	if( $type == 'category' )
+		$type_string = ucfirst( __( 'Category', 'bp_polls' ) );
+	
 
 	if( $tax_updated !== false) {
-		Poll_Extension_View::$succes_messages[] = __( ucfirst($type) . ' "'.$name.'" saved successfully','bp_polls');
+		Poll_Extension_View::$succes_messages[] = sprintf( __( '%s "%s" saved successfully','bp_polls' ), $type_string, $name );
 	}else{
-		Poll_Extension_View::$errors_messages[] = __('Taxonomy not saved','bp_polls');
+		Poll_Extension_View::$errors_messages[] = sprintf(  __( '"%s" not saved','bp_polls'), $type_string );
 	}
 	
 }
