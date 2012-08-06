@@ -16,7 +16,7 @@ $counter = 1;
 					<form class="vpl-poll-actions" method="post" action="">
 						<a class="button" href="<?php echo $poll->edit_link ?>" /><?php _e('Edit' ,'bp_polls')?></a>
 						<a class="button delete-poll" href="javascript:void(0)" /><?php _e('Delete Poll', 'bp_polls')?></a>
-						<input type="hidden" class="confirm_text" value="<?php _e("*WARNING*\nOnce deleted this poll cant be restored!\nAre you sure you want to delete this poll: \n".$poll->name, 'bp_polls'); ?>" />
+						<input type="hidden" class="confirm_text" value="<?php echo sprintf(__("*WARNING*\nOnce deleted this poll cant be restored!\nAre you sure you want to delete th poll '%s'?\n", 'bp_polls') , $poll->name ); ?>" />
 						<input type="hidden" name="poll_id" value="<?php echo $poll->id?>" />
 						<input type="hidden" name="delete_poll" value="<?php _e('Delete', 'bp_polls')?>" />
 					</form>
@@ -36,11 +36,11 @@ $counter = 1;
 					<?php endif;?>
 					
 					<span><?php _e('Start', 'bp_polls')?>: </span>
-					<?php echo date( VPL_DATE_FORMATE ,$poll->start) . ' ' . date( VPL_TIME_FORMATE ,$poll->start) ?><br/>
+					<?php echo date_i18n( VPL_DATE_FORMATE ,$poll->start) . ' ' . date_i18n( VPL_TIME_FORMATE ,$poll->start) ?><br/>
 					
 					<?php if($poll->expiry != 0):?>
 						<span><?php _e('Expire', 'bp_polls')?>: </span>
-						<?php echo date( VPL_DATE_FORMATE ,$poll->expiry) . ' ' . date( VPL_TIME_FORMATE ,$poll->expiry) ?><br/>
+						<?php echo date_i18n( VPL_DATE_FORMATE ,$poll->expiry) . ' ' . date_i18n( VPL_TIME_FORMATE ,$poll->expiry) ?><br/>
 					<?php endif;?>
 					
 					<span><?php _e('Categories', 'bp_polls')?>: </span>
