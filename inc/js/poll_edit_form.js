@@ -1,9 +1,5 @@
 jQuery(document).ready(function() {
 	
-    
-	
-	
-	
     jQuery('input[name=poll_type]').change(function(){
 		update_visibility_of_fields();
 	})
@@ -73,7 +69,7 @@ jQuery(document).ready(function() {
 			
 
 		} 
-        
+		
         if( end_timestamp && start_timestamp && end_timestamp <= start_timestamp) {
 			error_message += __e('Start date must be less than the end date') + '<br/>';
 			jQuery('input[name=poll_end_date]').addClass('error-field');
