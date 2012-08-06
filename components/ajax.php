@@ -103,7 +103,7 @@ function vpl_send_invites() {
 	$poll_name = $_POST['name'];
 	$poll_link = $_POST['link'];
 	
-	$content = '<a href="'.$bp->loggedin_user->domain.'">'.$bp->loggedin_user->fullname.'</a> ' . __('invites you to particiapte in a poll', 'bp_polls') . '<a href="'.$poll_link.'">'.$poll_name.'</a>';
+	$content = '<a href="'.$bp->loggedin_user->domain.'">'.$bp->loggedin_user->fullname.'</a> ' . __('invites you to particiapte in a poll', 'bp_polls') . ' <a href="'.$poll_link.'">'.$poll_name.'</a>';
 	
 	messages_new_message(array(
 		'subject' => __('Participate in a poll!','bp_polls'),
