@@ -4,7 +4,7 @@
  * Plugin URI:  http://buddypress.org
  * Description: Add polls feature to your buddypress site
  * Author:      Themekraft
- * Version:     1.2
+ * Version:     1.2.1
  * Author URI:  http://themekraft.com
  */
 
