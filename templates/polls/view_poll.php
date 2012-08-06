@@ -24,9 +24,9 @@ global $vpl_poll, $bp, $current_user;
 	<?php if($vpl_poll->status == 'closed'):?>
 		<p class="vpl-message warning"><?php _e('This poll is expired', 'bp_polls')?></p>
 	<?php else:?>
-		<strong><?php _e('Start', 'bp_polls')?>: </strong> <?php echo date(VPL_DATE_FORMATE,$vpl_poll->start) . ' ' . date(VPL_TIME_FORMATE,$vpl_poll->start) ?><br/>
+		<strong><?php _e('Start', 'bp_polls')?>: </strong> <?php echo date_i18n(VPL_DATE_FORMATE,$vpl_poll->start) . ' ' . date_i18n(VPL_TIME_FORMATE,$vpl_poll->start) ?><br/>
 		<?php if($vpl_poll->expiry != 0):?>
-			<strong><?php _e('Expire', 'bp_polls')?>: </strong> <?php echo date( VPL_DATE_FORMATE ,$vpl_poll->expiry). ' ' . date( VPL_TIME_FORMATE ,$vpl_poll->expiry) ?><br/>
+			<strong><?php _e('Expire', 'bp_polls')?>: </strong> <?php echo date_i18n( VPL_DATE_FORMATE ,$vpl_poll->expiry). ' ' . date_i18n( VPL_TIME_FORMATE ,$vpl_poll->expiry) ?><br/>
 		<?php endif; ?>
 	<?php endif;?>
 	

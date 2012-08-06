@@ -78,7 +78,7 @@ jQuery(document).ready(function() {
 	
 	<div class="start_date_wrap">
 		<label><?php _e('Poll Start Date', 'bp_polls')?>   <span class="req">*</span></label>
-		<input type="text" name="poll_start_date" class="date_field" value="<?php echo date( VPL_DATE_FORMATE.' @ '.VPL_TIME_FORMATE ,strtotime('+1 hour'))?>"/>
+		<input type="text" name="poll_start_date" class="date_field" value="<?php echo date_i18n( VPL_DATE_FORMATE.' @ '.VPL_TIME_FORMATE )?>"/>
 		<input type="hidden" name="poll_start" value="" />
 	</div>
 		

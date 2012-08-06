@@ -7,7 +7,7 @@ global $vpl_poll, $vpl_categories, $vpl_user_id, $vpl_group_id, $vpl_top_categor
 ?>
 <script>
 
-var JS_DATE_FORMAT = '<?php echo vpl_js_date_format();?>';
+var JS_DATE_FORMAT = '<?php echo vpl_js_date_format( get_option('date_format') );?>';
 var JS_TIME_FORMAT = '<?php echo vpl_js_time_format();?>';
 
 var group_tags = [""<?php foreach($vpl_tags as $t){echo ',"'.$t->name.'"';}?>];
@@ -95,13 +95,13 @@ jQuery(document).ready(function(){
 	
 	<div class="start_date_wrap">
 		<label><?php _e('Poll Start Date', 'bp_polls')?>  <span class="req">*</span></label>
-		<input type="text" name="poll_start_date" class="date_field" value="<?php echo  date(VPL_DATE_FORMATE.' @ '.VPL_TIME_FORMATE, $vpl_poll->start);  ?>"/> 
+		<input type="text" name="poll_start_date" class="date_field" value="<?php echo  date_i18n(VPL_DATE_FORMATE.' @ '.VPL_TIME_FORMATE, $vpl_poll->start);  ?>"/> 
 		<input type="hidden" name="poll_start" value="" />
 	</div>
 		
 	<div class="end_date_wrap">
 		<label><?php _e('Poll End Date', 'bp_polls')?>  </label>
-		<input type="text" name="poll_end_date" class="date_field" value="<?php if($vpl_poll->expiry != 0) echo date( VPL_DATE_FORMATE.' @ '.VPL_TIME_FORMATE, $vpl_poll->expiry); else echo '';?>" /> 
+		<input type="text" name="poll_end_date" class="date_field" value="<?php if($vpl_poll->expiry != 0) echo date_i18n( VPL_DATE_FORMATE.' @ '.VPL_TIME_FORMATE, $vpl_poll->expiry); else echo '';?>" /> 
 		<input type="hidden" name="poll_end" value="" />
 	</div>
 	
@@ -170,11 +170,11 @@ jQuery(document).ready(function(){
 											<div class="answer-date"/>
 												<div>
 													<label><?php _e('Start', 'bp_polls')?></label>
-													<input type="text" value="<?php echo date(VPL_DATE_FORMATE.' @ '.VPL_TIME_FORMATE, $start_end[0]) ?>" class="start date_field"/>
+													<input type="text" value="<?php echo date_i18n(VPL_DATE_FORMATE.' @ '.VPL_TIME_FORMATE, $start_end[0]) ?>" class="start date_field"/>
 												</div>
 												<div>
 													<label><?php _e('End', 'bp_polls')?></label>
-													<input type="text" value="<?php echo date(VPL_DATE_FORMATE.' @ '.VPL_TIME_FORMATE, $start_end[1]) ?>" class="end date_field"/>
+													<input type="text" value="<?php echo date_i18n(VPL_DATE_FORMATE.' @ '.VPL_TIME_FORMATE, $start_end[1]) ?>" class="end date_field"/>
 												</div>
 												<div>
 													<label>&nbsp;</label>
