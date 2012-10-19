@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BP Polls v1.2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2012-10-19 12:58:23+0000\n"
+"PO-Revision-Date: 2012-10-19 16:46:47+0000\n"
 "Last-Translator: admin <tattle@teatrovalleoccupato.it>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -146,7 +146,7 @@ msgstr "voti"
 #: bp-polls.php:261
 #@ bp_polls
 msgid "Thank you for the vote! It was successfully saved."
-msgstr "Grazie per il tuo voto! E' stato salvato con successo."
+msgstr "Grazie per il tuo voto! Registrato con successo."
 
 #: bp-polls.php:262
 #@ bp_polls
@@ -191,7 +191,7 @@ msgstr "Minuto"
 #: bp-polls.php:283
 #@ bp_polls
 msgid "Open"
-msgstr "Apri"
+msgstr "Aperto"
 
 #: bp-polls.php:286
 #@ bp_polls
@@ -211,7 +211,7 @@ msgstr "Opzioni BP Pools"
 #: bp-polls.php:311
 #@ bp_polls
 msgid "Enable inviting all users to poll."
-msgstr "Abilita l'invito di tutti gli utenti alla votazione."
+msgstr "Abilita invito di tutti gli utenti alla votazione."
 
 #: components/ajax.php:34
 #: templates/polls/view_poll.php:59
@@ -240,7 +240,7 @@ msgstr "Partecipa al sondaggio!"
 #: components/core/Poll_Extension_View.php:792
 #@ bp_polls
 msgid "There is no poll with this ID"
-msgstr "Non c'è sondaggio con questo ID"
+msgstr "Nessun sondaggio con questo ID"
 
 #: components/core/Poll_Extension_View.php:623
 #: components/core/Poll_Extension_View.php:796
@@ -251,17 +251,17 @@ msgstr "ID sondaggio mancante"
 #: components/core/Poll_Extension_View.php:699
 #@ bp_polls
 msgid "Invite group users"
-msgstr "Invita membri del gruppo"
+msgstr "Seleziona utenti gruppo"
 
 #: components/core/Poll_Extension_View.php:700
 #@ bp_polls
 msgid "Invite all friends"
-msgstr "Invita tutti gli amici"
+msgstr "Seleziona amici"
 
 #: components/core/Poll_Extension_View.php:702
 #@ bp_polls
 msgid "Invite all users"
-msgstr "Invita tutti gli utenti"
+msgstr "Seleziona tutti"
 
 #: components/core/Poll_Extension_View.php:720
 #@ bp_polls
@@ -373,7 +373,7 @@ msgstr ""
 #: components/processing_POST.php:103
 #@ bp_polls
 msgid "We are sorry, but poll was not created. Some error occured."
-msgstr "Spiacente, il sondaggio non è stata creato. Si è verificato un errore."
+msgstr "Spiacente, il sondaggio non è stato creato. Si è verificato un errore."
 
 #: components/processing_POST.php:151
 #@ bp_polls
@@ -549,7 +549,7 @@ msgstr "Amici"
 #: templates/polls/new_poll.php:112
 #@ bp_polls
 msgid "Show Poll results to users"
-msgstr "Mostra sondaggio a tutti gli utenti"
+msgstr "Mostra risultati sondaggio agli utenti"
 
 #: templates/polls/edit_poll.php:129
 #: templates/polls/new_poll.php:113
