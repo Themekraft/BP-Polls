@@ -30,7 +30,7 @@ jQuery(document).ready(function() {
 			
 			jQuery(this).hide();
 			
-			jQuery.post( 'wp-admin/admin-ajax.php',
+			jQuery.post( '/wp-admin/admin-ajax.php',
 						{
 							action:'vpl_make_vote',
 							poll_id: poll_id,
@@ -99,7 +99,7 @@ jQuery(document).ready(function() {
 			jQuery(this).hide();
 			question.find('.user.current_user .checkbox').addClass('loaded');
 			question.find('.user.current_user .checkbox input[type=checkbox]').hide();
-			jQuery.post( 'wp-admin/admin-ajax.php',
+			jQuery.post( '/wp-admin/admin-ajax.php',
 						{
 							no_results: '1',
 							action: 'vpl_make_vote',
@@ -190,7 +190,7 @@ jQuery(document).ready(function() {
 		jQuery('.invite_users_list .friend').removeClass('selected');
 		
 		if( ids ) {
-			jQuery.post( 'wp-admin/admin-ajax.php',
+			jQuery.post( '/wp-admin/admin-ajax.php',
 						{
 							action:'vpl_send_invites',
 							friends: ids,
