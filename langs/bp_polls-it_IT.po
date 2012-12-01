@@ -1,0 +1,884 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: BP Polls v1.2.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2012-10-19 16:46:47+0000\n"
+"Last-Translator: htrex <htrex@memefarmers.net>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: Italian\n"
+"X-Poedit-Country: ITALY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: bp-polls.php:33
+#: templates/polls/all_polls.php:5
+#@ bp_polls
+msgid "Polls"
+msgstr "Sondaggi"
+
+#: bp-polls.php:237
+#@ bp_polls
+msgid "Please enter the Poll name"
+msgstr "Inserisci il nome del sondaggio"
+
+#: bp-polls.php:238
+#@ bp_polls
+msgid "Start date can not be empty"
+msgstr "La data di inizio non può essere vuota"
+
+#: bp-polls.php:239
+#@ bp_polls
+msgid "End date can not be empty"
+msgstr "La data di fine non può essere vuota"
+
+#: bp-polls.php:240
+#@ bp_polls
+msgid "Start date must be less than the end date"
+msgstr "La data di inizio deve essere precedente alla data di fine"
+
+#: bp-polls.php:241
+#@ bp_polls
+msgid "Poll must have at least one question"
+msgstr "Il sondaggio deve avere almeno una domanda"
+
+#: bp-polls.php:242
+#@ bp_polls
+msgid "Missed question text for Question #"
+msgstr "Testo della domanda mancante per Domanda #"
+
+#: bp-polls.php:243
+#@ bp_polls
+msgid "Dating Poll must have at least 2 dates"
+msgstr "Il sondaggio per un appuntamento deve avere almeno 2 date"
+
+#: bp-polls.php:244
+#@ bp_polls
+msgid "Question #"
+msgstr "Domanda #"
+
+#: bp-polls.php:245
+#@ bp_polls
+msgid "must have at least 2 answers"
+msgstr "deve avere almeno 2 risposte"
+
+#: bp-polls.php:246
+#@ bp_polls
+msgid "Missed start for date #"
+msgstr "Data di inizio mancante #"
+
+#: bp-polls.php:247
+#@ bp_polls
+msgid "Missed end for date #"
+msgstr "Data di fine mancante #"
+
+#: bp-polls.php:248
+#@ bp_polls
+msgid "The startdate for answer"
+msgstr "La data di inizio per la risposta"
+
+#: bp-polls.php:249
+#@ bp_polls
+msgid "have to be before the enddate"
+msgstr "deve essere prima della data di fine"
+
+#: bp-polls.php:250
+#@ bp_polls
+msgid "A start and an end date for answer"
+msgstr "Una data di inizio e di fine per risposta"
+
+#: bp-polls.php:251
+#@ bp_polls
+msgid "have to be filled in"
+msgstr "deve essere compilato"
+
+#: bp-polls.php:252
+#@ bp_polls
+msgid "Missed answer text for Question #"
+msgstr "Testo di risposta mancante per Domanda #"
+
+#: bp-polls.php:253
+#@ bp_polls
+msgid "Answer #"
+msgstr "Risposta #"
+
+#: bp-polls.php:254
+#@ bp_polls
+msgid "Are you sure want delete this answer?"
+msgstr "Sei sicuro di voler cancellare questa risposta?"
+
+#: bp-polls.php:255
+#@ bp_polls
+msgid "Are you sure want delete this date?"
+msgstr "Sei sicuro di voler cancellare questa data?"
+
+#: bp-polls.php:256
+#@ bp_polls
+msgid "Are you sure want delete this question?"
+msgstr "Sei sicuro di voler cancellare questa domanda?"
+
+#: bp-polls.php:257
+#: bp-polls.php:258
+#: templates/polls/edit_poll.php:32
+#: templates/polls/new_poll.php:31
+#@ bp_polls
+msgid "Poll Name"
+msgstr "Nome Sondaggio"
+
+#: bp-polls.php:259
+#@ bp_polls
+msgid "Total"
+msgstr "Totale"
+
+#: bp-polls.php:260
+#@ bp_polls
+msgid "votes"
+msgstr "voti"
+
+#: bp-polls.php:261
+#@ bp_polls
+msgid "Thank you for the vote! It was successfully saved."
+msgstr "Grazie per il tuo voto! Registrato con successo."
+
+#: bp-polls.php:262
+#@ bp_polls
+msgid "Invites have been sent successfully"
+msgstr "Gli inviti sono stati mandati con successo"
+
+#: bp-polls.php:263
+#@ bp_polls
+msgid "Are you sure want to proceed? This action will clear all votes statistic."
+msgstr "Vuoi procedere? Questa azione cancellerà tutte le statistiche di voto."
+
+#: bp-polls.php:266
+#@ bp_polls
+msgid "Choose Time"
+msgstr "Scegli orario"
+
+#: bp-polls.php:267
+#@ bp_polls
+msgid "Now"
+msgstr "Adesso"
+
+#: bp-polls.php:268
+#@ bp_polls
+msgid "Done"
+msgstr "Fatto"
+
+#: bp-polls.php:269
+#@ bp_polls
+msgid "Time"
+msgstr "Orario"
+
+#: bp-polls.php:270
+#@ bp_polls
+msgid "Hour"
+msgstr "Ora"
+
+#: bp-polls.php:271
+#@ bp_polls
+msgid "Minute"
+msgstr "Minuto"
+
+#: bp-polls.php:283
+#@ bp_polls
+msgid "Open"
+msgstr "Aperto"
+
+#: bp-polls.php:286
+#@ bp_polls
+msgid "Closed"
+msgstr "Chiuso"
+
+#: bp-polls.php:289
+#@ bp_polls
+msgid "Draft"
+msgstr "Bozza"
+
+#: bp-polls.php:309
+#@ bp_polls
+msgid "BP Polls Options"
+msgstr "Opzioni BP Pools"
+
+#: bp-polls.php:311
+#@ bp_polls
+msgid "Enable inviting all users to poll."
+msgstr "Abilita invito di tutti gli utenti alla votazione."
+
+#: components/ajax.php:34
+#: templates/polls/view_poll.php:59
+#: templates/polls/view_poll_dating.php:91
+#: templates/polls/view_poll_dating.php:95
+#@ bp_polls
+msgid "You have already voted"
+msgstr "Hai già votato"
+
+#: components/ajax.php:47
+#@ bp_polls
+msgid "A voice from your IP is already considered"
+msgstr "Un voto dal tuo indirizzo IP è già considerato"
+
+#: components/ajax.php:106
+#@ bp_polls
+msgid "invites you to particiapte in a poll"
+msgstr "ti invita a partecipare ad un sondaggio"
+
+#: components/ajax.php:109
+#@ bp_polls
+msgid "Participate in a poll!"
+msgstr "Partecipa al sondaggio!"
+
+#: components/core/Poll_Extension_View.php:619
+#: components/core/Poll_Extension_View.php:792
+#@ bp_polls
+msgid "There is no poll with this ID"
+msgstr "Nessun sondaggio con questo ID"
+
+#: components/core/Poll_Extension_View.php:623
+#: components/core/Poll_Extension_View.php:796
+#@ bp_polls
+msgid "Missing poll ID"
+msgstr "ID sondaggio mancante"
+
+#: components/core/Poll_Extension_View.php:699
+#@ bp_polls
+msgid "Invite group users"
+msgstr "Seleziona utenti gruppo"
+
+#: components/core/Poll_Extension_View.php:700
+#@ bp_polls
+msgid "Invite all friends"
+msgstr "Seleziona amici"
+
+#: components/core/Poll_Extension_View.php:702
+#@ bp_polls
+msgid "Invite all users"
+msgstr "Seleziona tutti"
+
+#: components/core/Poll_Extension_View.php:720
+#@ bp_polls
+msgid "Send Invites"
+msgstr "Spedisci Inviti"
+
+#: components/core/Poll_Extension_View.php:721
+#@ bp_polls
+msgid "Cancel"
+msgstr "Annulla"
+
+#: components/core/Poll_Extension_View.php:726
+#@ bp_polls
+msgid "No users to invite"
+msgstr "Nessun utente da invitare"
+
+#: components/core/Poll_Extension_View.php:740
+#@ bp_polls
+msgid "Invite to the poll"
+msgstr "Invita al sondaggio"
+
+#: components/core/Poll_Extension_View.php:903
+#@ bp_polls
+msgid "There are no polls in this taxonomy"
+msgstr "Non ci sono sondaggi in questa tassonomia"
+
+#: components/core/Poll_Extension_View.php:908
+#@ bp_polls
+msgid "There in no taxonomy with this ID"
+msgstr "Non ci sono tassonomie con questo ID"
+
+#: components/core/Poll_Extension_View.php:914
+#@ bp_polls
+msgid "Missing taxonomy ID"
+msgstr "ID tassonomia mancante"
+
+#: components/core/Poll_Extension_View.php:996
+#@ bp_polls
+msgid "Missing category ID"
+msgstr "ID categoria mancante"
+
+#: components/core/Poll_Extension_View.php:1105
+#: components/core/Poll_Extension_View.php:1119
+#@ bp_polls
+msgid "Polls List"
+msgstr "Lista sondaggi"
+
+#: components/core/Poll_Extension_View.php:1107
+#: components/core/Poll_Extension_View.php:1117
+#: components/register_user_polls.php:60
+#: templates/polls/new_poll.php:25
+#@ bp_polls
+msgid "New Poll"
+msgstr "Nuovo sondaggio"
+
+#: components/core/Poll_Extension_View.php:1109
+#: components/core/Poll_Extension_View.php:1120
+#: components/register_user_polls.php:72
+#@ bp_polls
+msgid "Taxonomy"
+msgstr "Classificazione"
+
+#: components/core/Poll_Extension_View.php:1245
+#@ bp_polls
+msgid "&laquo; Previous"
+msgstr "&laquo; Precedente"
+
+#: components/core/Poll_Extension_View.php:1245
+#@ bp_polls
+msgid "Next &raquo;"
+msgstr "Prossima &raquo;"
+
+#: components/core/Poll_Group_Extension.php:59
+#@ default
+msgid "Who can see group polls?"
+msgstr ""
+
+#: components/core/Poll_Group_Extension.php:60
+#: templates/polls/edit_poll.php:114
+#: templates/polls/edit_poll.php:118
+#: templates/polls/new_poll.php:97
+#: templates/polls/new_poll.php:102
+#@ bp_polls
+msgid "All users"
+msgstr "Tutti gli utenti"
+
+#: components/core/Poll_Group_Extension.php:61
+#: templates/polls/edit_poll.php:123
+#: templates/polls/new_poll.php:107
+#@ bp_polls
+msgid "Group Members"
+msgstr "Membri del gruppo"
+
+#: components/core/Poll_Group_Extension.php:65
+#@ bp_polls
+msgid "Save"
+msgstr "Salva"
+
+#: components/core/Poll_Group_Extension.php:85
+#@ buddypress
+msgid "There was an error saving, please try again"
+msgstr ""
+
+#: components/core/Poll_Group_Extension.php:87
+#@ buddypress
+msgid "Settings saved successfully "
+msgstr ""
+
+#: components/processing_POST.php:103
+#@ bp_polls
+msgid "We are sorry, but poll was not created. Some error occured."
+msgstr "Spiacente, il sondaggio non è stato creato. Si è verificato un errore."
+
+#: components/processing_POST.php:151
+#@ bp_polls
+msgid "We are sorry, but poll not updated. Missing poll ID."
+msgstr "Spiacente, il sondaggio non è stato aggiornato. ID sondaggio mancante."
+
+#: components/processing_POST.php:266
+#@ bp_polls
+msgid "Poll was succesfully deleted"
+msgstr "Il sondaggio è stato cancellato"
+
+#: components/processing_POST.php:362
+#: components/processing_POST.php:411
+#@ bp_polls
+msgid "Tag"
+msgstr "Tag"
+
+#: components/processing_POST.php:365
+#: components/processing_POST.php:414
+#@ bp_polls
+msgid "Category"
+msgstr "Categoria"
+
+#: components/processing_POST.php:370
+#, php-format
+#@ bp_polls
+msgid "%s with name"
+msgstr "%s con nome"
+
+#: components/processing_POST.php:370
+#@ bp_polls
+msgid " aleady exists"
+msgstr "già esiste"
+
+#: components/processing_POST.php:384
+#: components/processing_POST.php:418
+#, php-format
+#@ bp_polls
+msgid "%s \"%s\" saved successfully"
+msgstr "%s \"%s\" salvato con successo"
+
+#: components/processing_POST.php:388
+#: components/processing_POST.php:420
+#, php-format
+#@ bp_polls
+msgid "\"%s\" not saved"
+msgstr "\"%s\" non salvato"
+
+#: components/register_user_polls.php:40
+#@ bp_polls
+msgid "My Polls"
+msgstr "Sondaggi avviati"
+
+#: components/register_user_polls.php:42
+#@ bp_polls
+msgid "User Polls"
+msgstr "Votazioni utente"
+
+#: components/register_user_polls.php:90
+#: templates/polls/edit_poll.php:22
+#@ bp_polls
+msgid "View Poll"
+msgstr "Vedi Sondaggio"
+
+#: components/register_user_polls.php:103
+#: templates/polls/edit_poll.php:25
+#: templates/polls/view_poll.php:10
+#: templates/polls/view_poll_dating.php:10
+#@ bp_polls
+msgid "Edit Poll"
+msgstr "Modifica Sondaggio"
+
+#: templates/polls/403.php:1
+#@ bp_polls
+msgid "You don't have permissions to access this page"
+msgstr "Non hai i permessi per accedere a questa pagina"
+
+#: templates/polls/404.php:1
+#@ bp_polls
+msgid "Requested page was not found"
+msgstr "La pagina richiesta non è stata trovata"
+
+#: templates/polls/edit_poll.php:35
+#: templates/polls/new_poll.php:35
+#: templates/polls/polls_list.php:46
+#: templates/polls/taxonomy.php:10
+#@ bp_polls
+msgid "Categories"
+msgstr "Categorie"
+
+#: templates/polls/edit_poll.php:36
+#: templates/polls/new_poll.php:36
+#@ bp_polls
+msgid "Add Category"
+msgstr "Aggiungi Categoria"
+
+#: templates/polls/edit_poll.php:55
+#: templates/polls/new_poll.php:47
+#@ bp_polls
+msgid "Show All Categories"
+msgstr "Mostra tutte le categorie"
+
+#: templates/polls/edit_poll.php:70
+#: templates/polls/new_poll.php:62
+#: templates/polls/polls_list.php:59
+#: templates/polls/taxonomy.php:39
+#@ bp_polls
+msgid "Tags"
+msgstr "Tags"
+
+#: templates/polls/edit_poll.php:78
+#@ bp_polls
+msgid "Add Tag"
+msgstr "Aggiungi Tag"
+
+#: templates/polls/edit_poll.php:93
+#: templates/polls/new_poll.php:76
+#@ bp_polls
+msgid "This category should be so broad as to expect more polls to be part of that category. Ideally you chose just one category for every poll, but it is possible to chose multiple categories. Categories are descriptive elements. Tags are more associative elements. You can use them to further refine the description of your poll. Just write down 3-5 words that come to your mind when you think about this poll. Tags should not include categories."
+msgstr "La Categoria dovrebbe essere abbastanza ampia da aspettarsi che altri sondaggi possano far parte della stessa. Idealmente dovresti scegliere solo una categoria per ciascun sondaggio, ma è possibile scegliere più categorie. Le categorie sono elementi descrittivi. I Tag sono elementi più associativi. Puoi usarli per rifinire ulteriormente la descrizione del tuo sondaggio. Scrivi 3-5 parole che ti vengono in mente quando pensi a questo sondaggio. I Tag non dovrebbero includere le Categorie."
+
+#: templates/polls/edit_poll.php:97
+#: templates/polls/new_poll.php:80
+#@ bp_polls
+msgid "Poll Start Date"
+msgstr "Data di inizio sondaggio"
+
+#: templates/polls/edit_poll.php:103
+#: templates/polls/new_poll.php:86
+#@ bp_polls
+msgid "Poll End Date"
+msgstr "Data di fine sondaggio"
+
+#: templates/polls/edit_poll.php:108
+#: templates/polls/new_poll.php:91
+#@ bp_polls
+msgid "Activate Poll"
+msgstr "Attiva Sondaggio"
+
+#: templates/polls/edit_poll.php:109
+#: templates/polls/new_poll.php:92
+#@ bp_polls
+msgid "Make this poll active"
+msgstr "Rendi questo sondaggio attivo"
+
+#: templates/polls/edit_poll.php:111
+#: templates/polls/new_poll.php:94
+#@ bp_polls
+msgid "Who can see this poll"
+msgstr "Chi può vedere questo sondaggio"
+
+#: templates/polls/edit_poll.php:115
+#: templates/polls/edit_poll.php:117
+#: templates/polls/new_poll.php:98
+#: templates/polls/new_poll.php:100
+#@ bp_polls
+msgid "Autorized users"
+msgstr "Utenti autorizzati"
+
+#: templates/polls/edit_poll.php:121
+#: templates/polls/new_poll.php:105
+#@ bp_polls
+msgid "Invited users"
+msgstr "Utenti invitati"
+
+#: templates/polls/edit_poll.php:125
+#: templates/polls/new_poll.php:109
+#@ bp_polls
+msgid "Friends"
+msgstr "Amici"
+
+#: templates/polls/edit_poll.php:128
+#: templates/polls/new_poll.php:112
+#@ bp_polls
+msgid "Show Poll results to users"
+msgstr "Mostra risultati sondaggio agli utenti"
+
+#: templates/polls/edit_poll.php:129
+#: templates/polls/new_poll.php:113
+#@ bp_polls
+msgid "Yes"
+msgstr "Si"
+
+#: templates/polls/edit_poll.php:130
+#: templates/polls/new_poll.php:114
+#@ bp_polls
+msgid "No"
+msgstr "No"
+
+#: templates/polls/edit_poll.php:133
+#@ bp_polls
+msgid "Save only poll data"
+msgstr "Salva solo dati del sondaggio"
+
+#: templates/polls/edit_poll.php:134
+#@ bp_polls
+msgid "This button will save only poll  Start and End date, Name and activity status. Questions and answers will NOT be saved. And votes statistic will NOT be cleared"
+msgstr "Questo bottone salverà solo le date di inizio e fine del sondaggio, il nome e lo stato di attività. Domande e risposte NON saranno salvate. Le statistiche di voto NON saranno cancellate"
+
+#: templates/polls/edit_poll.php:142
+#: templates/polls/edit_poll.php:216
+#: templates/polls/new_poll.php:120
+#: templates/polls/new_poll.php:197
+#@ bp_polls
+msgid "Remove Question"
+msgstr "Rimuovi Domanda"
+
+#: templates/polls/edit_poll.php:143
+#: templates/polls/edit_poll.php:217
+#: templates/polls/new_poll.php:121
+#: templates/polls/new_poll.php:198
+#@ bp_polls
+msgid "Question"
+msgstr "Domanda"
+
+#: templates/polls/edit_poll.php:144
+#: templates/polls/edit_poll.php:218
+#: templates/polls/new_poll.php:122
+#: templates/polls/new_poll.php:199
+#@ bp_polls
+msgid "Your question"
+msgstr "La tua domanda"
+
+#: templates/polls/edit_poll.php:147
+#: templates/polls/edit_poll.php:221
+#: templates/polls/new_poll.php:125
+#: templates/polls/new_poll.php:202
+#@ bp_polls
+msgid "Answer Type"
+msgstr "Tipo di risposta"
+
+#: templates/polls/edit_poll.php:149
+#: templates/polls/edit_poll.php:223
+#: templates/polls/new_poll.php:127
+#: templates/polls/new_poll.php:204
+#@ bp_polls
+msgid "One Answer"
+msgstr "Una risposta"
+
+#: templates/polls/edit_poll.php:150
+#: templates/polls/edit_poll.php:224
+#: templates/polls/new_poll.php:128
+#: templates/polls/new_poll.php:205
+#@ bp_polls
+msgid "Multiple Answers"
+msgstr "Risposte multiple"
+
+#: templates/polls/edit_poll.php:154
+#: templates/polls/edit_poll.php:227
+#: templates/polls/new_poll.php:131
+#: templates/polls/new_poll.php:208
+#@ bp_polls
+msgid "Limit number of answers"
+msgstr "Limita il numero di risposte"
+
+#: templates/polls/edit_poll.php:158
+#: templates/polls/edit_poll.php:231
+#: templates/polls/new_poll.php:135
+#: templates/polls/new_poll.php:212
+#@ bp_polls
+msgid "Answers"
+msgstr "Risposte"
+
+#: templates/polls/edit_poll.php:159
+#: templates/polls/edit_poll.php:232
+#: templates/polls/new_poll.php:136
+#: templates/polls/new_poll.php:213
+#@ bp_polls
+msgid "Dates"
+msgstr "Date"
+
+#: templates/polls/edit_poll.php:172
+#: templates/polls/edit_poll.php:240
+#: templates/polls/edit_poll.php:258
+#: templates/polls/new_poll.php:144
+#: templates/polls/new_poll.php:162
+#: templates/polls/new_poll.php:221
+#: templates/polls/new_poll.php:239
+#: templates/polls/polls_list.php:38
+#: templates/polls/view_poll.php:27
+#: templates/polls/view_poll_dating.php:26
+#@ bp_polls
+msgid "Start"
+msgstr "Inizio"
+
+#: templates/polls/edit_poll.php:176
+#: templates/polls/edit_poll.php:244
+#: templates/polls/edit_poll.php:262
+#: templates/polls/new_poll.php:148
+#: templates/polls/new_poll.php:166
+#: templates/polls/new_poll.php:225
+#: templates/polls/new_poll.php:243
+#@ bp_polls
+msgid "End"
+msgstr "Fine"
+
+#: templates/polls/edit_poll.php:181
+#: templates/polls/edit_poll.php:185
+#: templates/polls/edit_poll.php:249
+#: templates/polls/edit_poll.php:252
+#: templates/polls/edit_poll.php:267
+#: templates/polls/edit_poll.php:270
+#: templates/polls/new_poll.php:153
+#: templates/polls/new_poll.php:156
+#: templates/polls/new_poll.php:171
+#: templates/polls/new_poll.php:174
+#: templates/polls/new_poll.php:230
+#: templates/polls/new_poll.php:233
+#: templates/polls/new_poll.php:248
+#: templates/polls/new_poll.php:251
+#@ bp_polls
+msgid "Remove"
+msgstr "Rimuovi"
+
+#: templates/polls/edit_poll.php:191
+#: templates/polls/edit_poll.php:273
+#: templates/polls/new_poll.php:177
+#: templates/polls/new_poll.php:254
+#@ bp_polls
+msgid "Add Answer"
+msgstr "Aggiungi Risposta"
+
+#: templates/polls/edit_poll.php:192
+#: templates/polls/edit_poll.php:274
+#: templates/polls/new_poll.php:178
+#: templates/polls/new_poll.php:255
+#@ bp_polls
+msgid "Add Date"
+msgstr "Aggiungi Data"
+
+#: templates/polls/edit_poll.php:202
+#: templates/polls/new_poll.php:184
+#@ bp_polls
+msgid "Add Question"
+msgstr "Aggiungi Domanda"
+
+#: templates/polls/edit_poll.php:208
+#@ bp_polls
+msgid "Save poll (votes will be cleared)"
+msgstr "Salva sondaggio (i voti saranno cancellati)"
+
+#: templates/polls/edit_poll.php:209
+#@ bp_polls
+msgid "This button will save ALL poll data, questions, answers. And VOTES statistic will be CLEARED"
+msgstr "Questo bottone salverà TUTTI i dati del sondaggio, domande e risposte. Le statistiche dei VOTI saranno CANCELLATE"
+
+#: templates/polls/edit_taxonomy.php:5
+#@ bp_polls
+msgid "Edit taxonomy"
+msgstr "Modifica classificazione"
+
+#: templates/polls/edit_taxonomy.php:8
+#@ bp_polls
+msgid "Save taxonomy"
+msgstr "Salva classificazione"
+
+#: templates/polls/new_poll.php:27
+#@ bp_polls
+msgid "Poll Type"
+msgstr "Tipo sondaggio"
+
+#: templates/polls/new_poll.php:28
+#@ bp_polls
+msgid "Question Poll"
+msgstr "Domanda"
+
+#: templates/polls/new_poll.php:29
+#@ bp_polls
+msgid "Dating Poll"
+msgstr "Appuntamento"
+
+#: templates/polls/new_poll.php:70
+#@ bp_polls
+msgid "Add tag"
+msgstr "Aggiungi tag"
+
+#: templates/polls/new_poll.php:187
+#@ bp_polls
+msgid "Create poll"
+msgstr "Crea sondaggio"
+
+#: templates/polls/polls_list.php:17
+#: templates/polls/taxonomy.php:18
+#: templates/polls/taxonomy.php:47
+#@ bp_polls
+msgid "Edit"
+msgstr "Modifica"
+
+#: templates/polls/polls_list.php:18
+#@ bp_polls
+msgid "Delete Poll"
+msgstr "Cancella Sondaggio"
+
+#: templates/polls/polls_list.php:19
+#, php-format
+#@ bp_polls
+msgid ""
+"*WARNING*\n"
+"Once deleted this poll cant be restored!\n"
+"Are you sure you want to delete th poll '%s'?\n"
+msgstr ""
+"*ATTENZIONE*\n"
+"Una volta cancellato questo sondaggio non può essere ripristinato!\n"
+"Vuoi cancellare il sondaggio '%s'?\n"
+
+#: templates/polls/polls_list.php:21
+#: templates/polls/taxonomy.php:18
+#: templates/polls/taxonomy.php:47
+#@ bp_polls
+msgid "Delete"
+msgstr "Elimina"
+
+#: templates/polls/polls_list.php:31
+#@ bp_polls
+msgid "This is hidden poll"
+msgstr "Questo è un sondaggio nascosto"
+
+#: templates/polls/polls_list.php:33
+#@ bp_polls
+msgid "Status"
+msgstr "Stato"
+
+#: templates/polls/polls_list.php:42
+#: templates/polls/view_poll.php:29
+#: templates/polls/view_poll_dating.php:28
+#@ bp_polls
+msgid "Expire"
+msgstr "Scade"
+
+#: templates/polls/polls_list.php:73
+#@ bp_polls
+msgid "Questions"
+msgstr "Domande"
+
+#: templates/polls/polls_list.php:88
+#@ bp_polls
+msgid "There are no polls to show"
+msgstr "Non ci sono sondaggi da mostrare"
+
+#: templates/polls/taxonomy.php:7
+#@ bp_polls
+msgid "New Category"
+msgstr "Nuova Categoria"
+
+#: templates/polls/taxonomy.php:35
+#@ bp_polls
+msgid "New Tag"
+msgstr "Nuova Tag"
+
+#: templates/polls/taxonomy.php:68
+#@ bp_polls
+msgid ""
+"*WARNING*\n"
+"This category has polls. If you delete the category - all polls loosing category information.\n"
+"Are you sure want delete this category?"
+msgstr ""
+"*ATTENZIONE*\n"
+"Questa categoria è assegnata a dei sondaggi. Se cancelli la categoria - sarà rimossa da tutti i sondaggi.\n"
+"Sicuro di voler cancellare la categoria?"
+
+#: templates/polls/taxonomy.php:72
+#@ bp_polls
+msgid "Are you sure want delete this category?"
+msgstr "Vuoi cancellare questa categoria?"
+
+#: templates/polls/taxonomy.php:86
+#@ bp_polls
+msgid ""
+"*WARNING*\n"
+"This tag has polls. If you delete the category - all polls loosing tag information.\n"
+"Are you sure want delete this tag?"
+msgstr ""
+"*ATTENZIONE*\n"
+"Questo tag è assegnato a dei sondaggi. Se cancelli il tag - sarà rimosso da tutti i sondaggi.\n"
+"Sicuro di voler cancellare il tag?"
+
+#: templates/polls/taxonomy.php:90
+#@ bp_polls
+msgid "Are you sure want delete this tag?"
+msgstr "Vuoi cancellare questo tag?"
+
+#: templates/polls/view_poll.php:25
+#: templates/polls/view_poll_dating.php:24
+#@ bp_polls
+msgid "This poll is expired"
+msgstr "Questo sondaggio è concluso"
+
+#: templates/polls/view_poll.php:57
+#@ bp_polls
+msgid "You don't have enough rights to see the vote's results."
+msgstr "Non hai permessi sufficienti per vedere i risultati di voto."
+
+#: templates/polls/view_poll.php:79
+#@ bp_polls
+msgid "Maximum"
+msgstr "Massimo"
+
+#: templates/polls/view_poll.php:79
+#@ bp_polls
+msgid "options allowed"
+msgstr "opzioni permesse"
+
+#: templates/polls/view_poll.php:95
+#: templates/polls/view_poll_dating.php:76
+#@ bp_polls
+msgid "Vote"
+msgstr "Vota"
+
